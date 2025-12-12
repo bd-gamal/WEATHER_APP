@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="day-theme">
+    <div class="main-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-sun"></i> Today Weather
+            </div>
+            <button class="theme-btn" id="theme-toggle">Night Mode</button>
+        </header>
+
+        <div class="search-box">
+            <button id="search-btn" class="icon-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" id="city-input" placeholder="Search for a city">
+        </div>
+
+        <div class="weather-card">
+            <h2 class="city-name" id="city">--</h2>
+            <div class="weather-icon-container">
+                <img src="" id="weather-icon" alt="weather icon">
+            </div>
+
+            <div class="temperature">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <span id="temp">--</span>° C
+            </div>
+
+            <p class="description" id="desc">--</p>
+            <div class="humidity-box">
+                <p class="humidity-label">Humidity</p>
+                <div class="humidity-value">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span id="humidity">--</span> %
+                </div>
+            </div>
+        </div>
+
+        <div class="error" id="error-msg" style="display: none;">
+            <p>City not found. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
